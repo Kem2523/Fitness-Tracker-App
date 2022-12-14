@@ -13,11 +13,12 @@ function App() {
     <Router>
     <div className="App">
     <Navbar />
+    <br/>
     <Routes>
-    <Route path="/" exact component={<ExercisesList />}>
-      <Route path="/edit/:id" element={<EditExercise />} />
-      <Route path="/create" element={<CreateExercise />} />
-      <Route path="/user" element={<CreateUser />} />
+    <Route path="/" exact element={ExercisesList} >
+      <Route path="/edit/:id" element={EditExercise} />
+      <Route path="/create" element={CreateExercise>} />
+      <Route path="/user" element={CreateUser} />
       </Route>
     </Routes>
     </div>
@@ -26,3 +27,5 @@ function App() {
 }
 
 export default App;
+
+
